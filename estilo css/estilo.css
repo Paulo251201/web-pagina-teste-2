@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+:root{
+    --font-primaria:"Roboto", sans-serif;
+    --font-secundaria:"Open Sans", sans-serif;
+    --cor-primaria:#000000;
+    --cor-secundaria:#222831;
+    --cor-terciaria:#EEEEEE;
+    --cor-quartenaria:#D21312;
+}
+body{
+background-color: var(--cor-primaria);
+color: var(--cor-terciaria);
+}
+*{
+    margin: 0%;
+    padding: 0%;
+   
+}
+.cabecalho{
+    background-color:var(--cor-quartenaria) ;
+    padding: 2% 0% 0% 5%;
+    width: 100%;
+    height: 2.5rem; /* Altura do retângulo */
+    
+    
+}
+.cabecalho__menu{
+    display: flex;
+    text-align: center;
+    gap: 80px;
+}
+.cabecalho__menu__link{
+    font-family: var(--font-primaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--cor-terciaria);
+    margin-right: 20px;
+    
+   
+
+}
+
+.apresentacao{
+    margin: 10% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    gap: 82px;
+}
+.apresentacao__conteudo{
+    width: 50%;
+    height: 214px; 
+    display:  flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.apresentacao__conteudo__titulo{
+    font-size: 2.25;
+    font-family: var(--font-primaria);  
+    
+}
+.apresentacao__conteudo__titulo__strong{
+    color: var(--cor-quartenaria);
+}
+.apresentacao__conteudo__paragrafo{
+    font-size: 1.37rem;
+    font-family: var(--font-secundaria);
+} 
+.apresentacao__links{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 40px;
+    text-align: center;
+}
+.apresentacao__links__link{
+    background-color:  var(--cor-quartenaria);
+    width: 50%;
+    text-align: center;
+    border-radius: 15px;
+    font-weight: 550;
+    font-size: 1.25rem;;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--cor-terciaria);
+    font-family: var(--font-secundaria);
+    
+    
+}
+.apresentacao__links__link:hover{
+    background-color: #222831;
+}
+.imagem__png{/*forma que fiz para reduzir os png*/
+    width: 20px; 
+    height: auto; 
+    margin-right: 6px; 
+    align-items: center;
+
+}
+.apresentacao__imagem{
+    width: 50%;
+}
+.rodape {
+    margin-top:  20px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Para centralizar horizontalmente */
+    background-color: var(--cor-quartenaria);
+    color: var(--cor-terciaria);
+    padding: 2px;
+    height: 40px;
+   
+
+}
+.rodape__apresentação{
+    text-align: center;
+}
+.rodape__apresentação__final{
+        font-family: var(--font-secundaria);
+        font-size: 1.5rem;
+        font-weight: 100;
+}
+@media (max-width: 1200px) {
+    .cabecalho {
+        padding: 10%;
+        width: auto;
+    }
+    .cabecalho__menu {
+        justify-content: center;
+    }
+    .apresentacao {
+        flex-direction: column-reverse;
+        margin: 10% 5%; /* Reduza a margem horizontal */
+        font-size: 1.2rem
+    }
+    .apresentacao__conteudo {
+        width: auto;
+        text-align: center; /* Centralize o conteúdo */
+    }
+    .apresentacao__conteudo__titulo{
+        font-size: 1.8rem;
+    }
+    .apresentacao__conteudo__paragrafo{
+        font-size: 1.1rem;
+    }
+    .apresentacao__links {
+        flex-direction: row; /* Empilhe os links verticalmente */
+        align-items: center; /* Centralize os links */
+        gap: 20px; /* Espaçamento entre os links */
+    }
+    .apresentacao__links__link {
+       
+        width: 80%; /* Reduza a largura dos botões */
+        max-width: 300px; /* Defina uma largura máxima para os botões */
+        word-wrap: break-word; /* Adicione quebras de linha automáticas */
+        font-size: 1rem; /* Reduza o tamanho da fonte dos botões */
+    }
+    .rodape {
+        margin-top: 20px; /* Adicione uma margem superior para separar do conteúdo acima */
+    }
+}
