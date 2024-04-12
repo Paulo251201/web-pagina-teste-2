@@ -157,5 +157,6 @@ color: var(--cor-terciaria);
     }
     .rodape {
         margin-top: 20px; /* Adicione uma margem superior para separar do conteúdo acima */
+        font-size:0.8rem;
     }
 }
