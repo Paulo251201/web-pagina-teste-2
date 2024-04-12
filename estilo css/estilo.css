@@ -120,7 +120,7 @@ color: var(--cor-terciaria);
         font-size: 1.5rem;
         font-weight: 100;
 }
-@media (max-width: 1200px) {
+@media (max-width: 400px) {
     .cabecalho {
         padding: 10%;
         width: auto;
@@ -131,16 +131,16 @@ color: var(--cor-terciaria);
     .apresentacao {
         flex-direction: column-reverse;
         margin: 10% 5%; /* Reduza a margem horizontal */
-        font-size: 1.2rem
+        font-size: 1.2rem;
     }
     .apresentacao__conteudo {
         width: auto;
         text-align: center; /* Centralize o conteúdo */
     }
-    .apresentacao__conteudo__titulo{
+    .apresentacao__conteudo__titulo {
         font-size: 1.8rem;
     }
-    .apresentacao__conteudo__paragrafo{
+    .apresentacao__conteudo__paragrafo {
         font-size: 1.1rem;
     }
     .apresentacao__links {
@@ -149,7 +149,6 @@ color: var(--cor-terciaria);
         gap: 20px; /* Espaçamento entre os links */
     }
     .apresentacao__links__link {
-       
         width: 80%; /* Reduza a largura dos botões */
         max-width: 300px; /* Defina uma largura máxima para os botões */
         word-wrap: break-word; /* Adicione quebras de linha automáticas */
@@ -157,6 +156,7 @@ color: var(--cor-terciaria);
     }
     .rodape {
         margin-top: 20px; /* Adicione uma margem superior para separar do conteúdo acima */
-        font-size:0.8rem;
+        font-size: 0.9rem;
     }
 }
+
